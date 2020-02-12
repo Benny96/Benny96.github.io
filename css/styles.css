@@ -43,6 +43,14 @@ main {
 	text-align: center;
 }
 
+main > .logo {
+	width: 5.5rem;
+	height: 5.5rem;
+	line-height: 5.5rem;
+	border: solid 1px #ffffff;
+	border-radius: 100%;
+}
+
 main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
