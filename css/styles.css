@@ -50,6 +50,7 @@ main > .logo {
 	border: solid 1px #ffffff;
 	border-radius: 100%;
 	align-items: center;
+	justify-content: center;
 }
 
 main > .intro {
