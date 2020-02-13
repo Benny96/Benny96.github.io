@@ -1,5 +1,7 @@
 # Mi Repo
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Este repo contiene una GitHub Page básica que redirige a diversos perfiles sociales, así como a [mi blog personal](https://www.bennytacora.com/es/)
 que mantengo cada indeterminado tiempo, y a la página web de [Global Shapers](https://www.globalshapers.org/hubs/bilbao-hub), donde se muestra al
 equipo que somos dentro de esta iniciativa en Bilbao.
