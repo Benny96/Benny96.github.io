@@ -49,8 +49,6 @@ main > .logo {
     margin-right: auto;
     width: 5.5rem;
 	height: 5.5rem;
-	border: solid 1px #ffffff;
-	border-radius: 100%;
 }
 
 main > .intro {
