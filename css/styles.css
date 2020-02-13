@@ -49,6 +49,7 @@ main > .logo {
 	line-height: 5.5rem;
 	border: solid 1px #ffffff;
 	border-radius: 100%;
+	text-align: center;
 }
 
 main > .intro {
