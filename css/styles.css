@@ -44,6 +44,8 @@ main {
 }
 
 main > .logo {
+	display: flex;
+	flex-direction: column;
 	width: 5.5rem;
 	height: 5.5rem;
 	line-height: 5.5rem;
