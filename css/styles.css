@@ -154,7 +154,7 @@ main > .tagline {
 main > .specialties {
 	font-size: 1rem;
 	line-height: 1.5;
-	max-width: 48rem;
+	max-width: 72rem;
 	margin: 0 auto 1.5rem;
 	opacity: 0.85;
 }
@@ -162,7 +162,7 @@ main > .specialties {
 main > .lead {
 	font-size: 1.3rem;
 	line-height: 1.5;
-	max-width: 44rem;
+	max-width: 72rem;
 	margin: 0 auto 0.75rem;
 	font-weight: 300;
 }
@@ -170,7 +170,7 @@ main > .lead {
 main > .flow {
 	font-size: 1rem;
 	line-height: 1.6;
-	max-width: 48rem;
+	max-width: 72rem;
 	margin: 1.25rem auto 0.5rem;
 	font-weight: 600;
 }
@@ -178,14 +178,14 @@ main > .flow {
 main > .quote {
 	font-size: 1rem;
 	font-style: italic;
-	max-width: 44rem;
+	max-width: 72rem;
 	margin: 0 auto 1rem;
 	opacity: 0.9;
 }
 
 main > .proof {
 	font-size: 0.95rem;
-	max-width: 48rem;
+	max-width: 72rem;
 	margin: 0 auto 1.25rem;
 	opacity: 0.85;
 }
@@ -342,6 +342,15 @@ main.doc code {
 /* Más aire en pantallas grandes */
 @media (min-width: 768px) {
 	main {
-		padding: 4rem 40px;
+		padding: 4rem 24px;
 	}
+}
+
+/* Si una frase aún no cabe en una línea, que se reparta de forma equilibrada (sin palabras sueltas) */
+main > .specialties,
+main > .lead,
+main > .flow,
+main > .quote,
+main > .proof {
+	text-wrap: balance;
 }

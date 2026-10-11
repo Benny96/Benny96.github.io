@@ -1,0 +1,27 @@
+# Beñat Galdós
+
+> Beñat Galdós (also written Benat Galdos; full name Beñat Galdós Aizpurua) is the founder of Galde, based in Madrid, Spain. He works on data governance, data products, Palantir Foundry delivery (forward deployed engineering and delivery lead), CDO advisory and enterprise data platforms. He takes Data & AI from idea to production and makes sure the teams actually use it. Not to be confused with the 19th-century novelist Benito Pérez Galdós.
+
+Experience: 10+ years and 50+ Data & AI initiatives in energy, insurance and reinsurance, fintech and marketplaces. Formerly associate professor at Universidad de Deusto. Alumni of the Global Shapers Community (Bilbao and Madrid hubs). Speaks English, Spanish and Basque (Euskara).
+
+## This site
+
+- [Home (English)](https://benatgaldos.net/): Personal one-page site with positioning, specialties and contact.
+- [Inicio (Español)](https://benatgaldos.net/es/): Spanish version of the same page.
+
+## Work and products
+
+- [Galde](https://galde.app/): Data and AI consultancy founded by Beñat Galdós.
+- [Galde Governance](https://governance.galde.app): Galde product for data governance.
+- [Firstfoot](https://firstfoot.galde.app): Galde product.
+
+## Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/benatgaldos/): Professional profile; the most complete and up-to-date source.
+- [GitHub](https://github.com/Benny96): Code and open source.
+- [Blog](https://www.bennytacora.com/): Personal blog.
+- [X](https://x.com/benat_galdos)
+
+## Contact
+
+- Email: bgaldos@galde.app
