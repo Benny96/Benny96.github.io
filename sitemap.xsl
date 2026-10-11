@@ -46,16 +46,26 @@
 						<thead>
 							<tr>
 								<th>URL</th>
-								<th class="alt">Languages</th>
+								<th>Language</th>
+								<th class="alt">Also available in</th>
 								<th>Last modified</th>
 							</tr>
 						</thead>
 						<tbody>
 							<xsl:for-each select="sm:urlset/sm:url">
+								<xsl:variable name="self" select="sm:loc"/>
 								<tr>
 									<td><a href="{sm:loc}"><xsl:value-of select="sm:loc"/></a></td>
+									<td>
+										<span class="lang">
+											<xsl:choose>
+												<xsl:when test="xhtml:link[@href=$self and @hreflang!='x-default']/@hreflang='es'">es · Español</xsl:when>
+												<xsl:otherwise>en · English</xsl:otherwise>
+											</xsl:choose>
+										</span>
+									</td>
 									<td class="alt">
-										<xsl:for-each select="xhtml:link[@rel='alternate' and @hreflang!='x-default']">
+										<xsl:for-each select="xhtml:link[@rel='alternate' and @hreflang!='x-default' and @href!=$self]">
 											<a class="lang" href="{@href}"><xsl:value-of select="@hreflang"/></a>
 										</xsl:for-each>
 									</td>
