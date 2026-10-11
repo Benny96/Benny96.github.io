@@ -24,3 +24,28 @@ main {
 .inspiration a {
 	color: #FFFFFF;
 }
+
+.lang a,
+.products a,
+.small a {
+	color: #FFFFFF;
+}
+
+.button {
+	color: #FAFAFA;
+}
+
+.button:hover,
+.button:focus {
+	background: #FAFAFA;
+	color: #303F9F;
+}
+
+body {
+	background: #303F9F;
+}
+
+main.doc a {
+	color: #FFFFFF;
+}
+
