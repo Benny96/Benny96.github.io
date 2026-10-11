@@ -49,3 +49,9 @@ main.doc a {
 	color: #FFFFFF;
 }
 
+.lang a:hover,
+.lang a:focus {
+	background: #FAFAFA;
+	color: #303F9F;
+}
+

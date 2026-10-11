@@ -67,7 +67,7 @@ main {
 	flex-direction: column;
 	min-height: 100vh;
 	justify-content: center;
-	padding: 0 30px;
+	padding: 3rem 20px;
 	text-align: center;
 }
 
@@ -127,9 +127,20 @@ main {
 
 .lang {
 	position: absolute;
-	top: 1rem;
+	top: 1.25rem;
 	right: 1.25rem;
-	font-size: 1rem;
+	font-size: 0.9rem;
+}
+
+/* Selector de idioma como botón (píldora) */
+.lang a {
+	display: inline-block;
+	padding: 0.35rem 0.9rem;
+	border: 1.5px solid currentColor;
+	border-radius: 999px;
+	line-height: 1.2;
+	text-decoration: none;
+	transition: background 0.2s ease, color 0.2s ease;
 }
 
 main > .intro {
@@ -143,7 +154,7 @@ main > .tagline {
 main > .specialties {
 	font-size: 1rem;
 	line-height: 1.5;
-	max-width: 40rem;
+	max-width: 48rem;
 	margin: 0 auto 1.5rem;
 	opacity: 0.85;
 }
@@ -151,7 +162,7 @@ main > .specialties {
 main > .lead {
 	font-size: 1.3rem;
 	line-height: 1.5;
-	max-width: 38rem;
+	max-width: 44rem;
 	margin: 0 auto 0.75rem;
 	font-weight: 300;
 }
@@ -159,7 +170,7 @@ main > .lead {
 main > .flow {
 	font-size: 1rem;
 	line-height: 1.6;
-	max-width: 40rem;
+	max-width: 48rem;
 	margin: 1.25rem auto 0.5rem;
 	font-weight: 600;
 }
@@ -167,14 +178,14 @@ main > .flow {
 main > .quote {
 	font-size: 1rem;
 	font-style: italic;
-	max-width: 36rem;
+	max-width: 44rem;
 	margin: 0 auto 1rem;
 	opacity: 0.9;
 }
 
 main > .proof {
 	font-size: 0.95rem;
-	max-width: 40rem;
+	max-width: 48rem;
 	margin: 0 auto 1.25rem;
 	opacity: 0.85;
 }
@@ -226,6 +237,32 @@ main > .small {
 	font-size: 0.9rem;
 	line-height: 1.5;
 	box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.25);
+	/* Aparece con un fade suave unos instantes después de cargar la página */
+	animation: cookie-in 0.45s ease-out 0.5s backwards;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#cookie-banner.closing {
+	opacity: 0;
+	transform: translateY(16px);
+}
+
+@keyframes cookie-in {
+	from {
+		opacity: 0;
+		transform: translateY(16px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#cookie-banner {
+		animation: none;
+		transition: none;
+	}
 }
 
 #cookie-banner p {
@@ -301,3 +338,10 @@ main.doc code {
 	font-family: monospace;
 }
 
+
+/* Más aire en pantallas grandes */
+@media (min-width: 768px) {
+	main {
+		padding: 4rem 40px;
+	}
+}

@@ -44,19 +44,25 @@
     });
   }
 
-  function hide() {
+  function hide(animated) {
     var b = document.getElementById('cookie-banner');
-    if (b && b.parentNode) b.parentNode.removeChild(b);
+    if (!b || !b.parentNode) return;
+    if (animated) {
+      b.classList.add('closing');
+      setTimeout(function () { if (b.parentNode) b.parentNode.removeChild(b); }, 320);
+    } else {
+      b.parentNode.removeChild(b);
+    }
   }
 
   function decide(v) {
     set(v);
     if (v === 'granted') loadGA(); else clearGA();
-    hide();
+    hide(true);
   }
 
   function show() {
-    hide();
+    hide(false);
     var b = document.createElement('div');
     b.id = 'cookie-banner';
     b.setAttribute('role', 'dialog');
